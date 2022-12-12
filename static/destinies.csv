@@ -1,0 +1,53 @@
+destino,tipo,bioma,clima,costo,pais,idiomas,viaje
+bariloche,relax,montania,frio,bajo,no,espanol,2.5
+barcelona,turismo,"ciudad, playa",estacional,alto,si,"espanol, catalan",13
+cataratas,aventura,montania,calor,bajo,no,espanol,2
+salta,turismo,desierto,calor,bajo,no,espanol,2.5
+rio de janeiro,relax,playa,calor,intermedio,si,portugues,3
+cusco,aventura,montania,templado,bajo,si,espanol,8
+cancun,relax,playa,calor,alto,si,espanol,12
+new york,turismo,ciudad,estacional,alto,si,ingles,13
+los angeles,turismo,"ciudad, playa",estacional,alto,si,ingles,16
+"yosemite, san francisco",aventura,montania,estacional,alto,si,ingles,16
+las vegas,aventura,ciudad,estacional,alto,si,ingles,16
+paris,turismo,ciudad,templado,alto,si,frances,13
+londres,turismo,ciudad,frio,alto,si,ingles,16
+zagreb,turismo,ciudad,estacional,intermedio,si,croata,17
+mykonos,relax,playa,calor,alto,si,griego,25
+zurich,relax,montania,estacional,alto,si,"aleman, italiano, frances",16
+helsinki,turismo,ciudad,frio,alto,si,"sueco, finlandes",18
+el cairo,turismo,desierto,calor,bajo,si,arabe,21
+ciudad del cabo,relax,playa,templado,intermedio,si,ingles,39
+nepal,aventura,montania,calor,bajo,si,nepali,25
+new delhi,turismo,ciudad,calor,bajo,si,"indio, ingles",23.5
+tailandia o filipinas,relax,playa,calor,intermedio,si,tailandes,28
+estambul,turismo,ciudad,templado,intermedio,si,turco,17
+tokyo,turismo,ciudad,calor,alto,si,japones,27.5
+melbourne,turismo,ciudad,estacional,alto,si,ingles,24
+beijing,turismo,ciudad,templado,intermedio,si,mandarin,28
+maldivas,relax,playa,calor,intermedio,si,maldivo,26
+costa argentina,relax,playa,estacional,bajo,no,espanol,5
+miami,turismo,playa,calor,alto,si,ingles,9
+orlando,aventura,ciudad,calor,alto,si,ingles,9
+valparaiso,relax,playa,calor,intermedio,si,espanol,2.5
+santiago de chile,relax,ciudad,estacional,intermedio,si,espanol,2
+alicante,relax,playa,calor,intermedio,si,espanol,15
+roma,relax,ciudad,calor,alto,si,italiano,13
+alaska,aventura,montania,frio,alto,si,ingles,22
+toronto,turismo,ciudad,frio,alto,si,"ingles, frances",15
+san petesburgo,turismo,ciudad,frio,intermedio,si,ruso,25
+moscu,turismo,ciudad,frio,intermedio,si,ruso,23
+milan,turismo,ciudad,templado,alto,si,italiano,16
+punta del este,relax,playa,calor,alto,si,espanol,0.75
+ushuaia,aventura,ciudad,frio,bajo,no,espanol,3.5
+san pablo,relax,ciudad,calor,intermedio,si,portugues,2.5
+"san rafael, mendoza",aventura,montania,frio,intermedio,no,espanol,2
+"puerto madryn, chubut",relax,playa,frio,bajo,no,espanol,2
+jujuy,aventura,montania,calor,bajo,no,espanol,2.25
+"cordoba, argentina",aventura,montania,calor,bajo,no,espanol,1.5
+lisboa,"turismo, relax",playa,calor,intermedio,si,portugues,14.5
+berlin,turismo,ciudad,frio,alto,si,aleman,16
+amsterdam,relax,ciudad,estacional,alto,si,holandes,13.5
+bruselas,relax,ciudad,estacional,alto,si,"holandes, frances, aleman",16
+mar del plata,relax,playa,estacional,bajo,no,espanol,1
+doha,relax,"ciudad, desierto",calor,alto,si,arabe,19

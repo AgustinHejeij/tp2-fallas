@@ -1,0 +1,56 @@
+from destiny import Destiny
+
+user_destiny = None
+
+rule "Start":
+    then:
+        attribute user_destiny = get_user_destiny()
+
+rule "Select type":
+    when:
+        $destiny := Destiny(user_destiny.type not in type)
+    then:
+        forget $destiny
+
+rule "Select biome":
+    when:
+        $destiny := Destiny(user_destiny.biome != "cualquiera" and user_destiny.biome not in biome)
+    then:
+        forget $destiny
+
+rule "Select weather":
+    when:
+        $destiny := Destiny(user_destiny.weather != "cualquiera" and user_destiny.weather != weather)
+    then:
+        forget $destiny
+
+rule "Select cost":
+    when:
+        $destiny := Destiny(user_destiny.cost < cost)
+    then:
+        forget $destiny
+
+rule "Select argentina":
+    when:
+        $destiny := Destiny(user_destiny.country != country)
+    then:
+        forget $destiny
+
+rule "Select languages":
+    when:
+        $destiny := Destiny(len(set(user_destiny.languages).intersection(set(languages))) == 0)
+    then:
+        forget $destiny
+
+rule "Select trip duration":
+    when:
+        $destiny := Destiny(user_destiny.trip_length < trip_length)
+    then:
+        forget $destiny
+
+rule "Get destiny":
+    when:
+        $destiny := Destiny()
+    then:
+        set_recommended_destiny($destiny.name)
+        halt
