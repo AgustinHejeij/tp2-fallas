@@ -1,5 +1,3 @@
-import csv
-
 def cost_to_int(cost):
     if cost == "bajo":
         return 1
@@ -8,41 +6,13 @@ def cost_to_int(cost):
     else:
         return 3
 
-def read_destinies(csv_file):
-    destinies = []
-
-    open_file = open(csv_file)
-    csv_reader = csv.reader(open_file)
-
-    # Skip headers
-    next(csv_reader)
-
-    for destiny in csv_reader:
-        destinies.append(
-            Destiny(
-                destiny[0],
-                destiny[1].replace(" ", "").split(","),
-                destiny[2].replace(" ", "").split(","),
-                destiny[3],
-                cost_to_int(destiny[4]),
-                destiny[5] == "si",
-                destiny[6].replace(" ", "").split(","),
-                float(destiny[7])
-            )
-        )
-
-    open_file.close()
-
-    return destinies
-
-
-class Destiny:
+class Rule:
     def __init__(self, name, type, biome, weather, cost, country, languages, trip_length):
         self._name = name
         self._type = type
         self._biome = biome
         self._weather = weather
-        self._cost = cost
+        self._cost = cost_to_int(cost)
         self._country = country
         self._languages = languages
         self._trip_length = trip_length
@@ -114,7 +84,7 @@ class Destiny:
     def is_equal(self, destiny):
         return self._biome == destiny.biome and self._weather == destiny.weather and self._cost == destiny.cost and self._country == destiny.country and self._languages == destiny.languages and self._trip_length == destiny.trip_length
 
-    def compare_fields(self, destiny):
+    def get_similarity(self, destiny):
         count = 0
         if destiny.type in self._type:
             count += 1
@@ -132,13 +102,3 @@ class Destiny:
             count += 1
 
         return count
-
-class UserDestiny:
-    def __init__(self, type, biome, weather, cost, country, languages, trip_length):
-        self.type = type
-        self.biome = biome
-        self.weather = weather
-        self.cost = cost
-        self.country = country
-        self.languages = languages
-        self.trip_length = trip_length
